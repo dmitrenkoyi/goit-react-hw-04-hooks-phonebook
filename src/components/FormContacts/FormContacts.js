@@ -32,6 +32,8 @@ const FormContacts = ({contacts,  onSubmit}) => {
     
     if (coincidenceContacts(name)) {
       alert(`${name} is already in contacts`);
+      setName('');
+      setNumber('');
       return;
     }
 
